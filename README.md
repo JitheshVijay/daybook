@@ -4,6 +4,32 @@ Log your day by chatting, and track it with charts. Tell Daybook what you did in
 
 Built with React 19, Vite 6, Tailwind v4, shadcn/ui, and a local SQLite database. Records stay on this computer.
 
+## Screenshots
+
+**Chat** — report your day in plain words, ask about it, get an answer with a chart drawn from your own records.
+
+![Daybook chat, answering a question about weekly calories with an inline bar chart](qa/chat-1440.png)
+
+**Insights** — dashboards for Training, Nutrition, Steps, Sleep, Screen time, Reading, Guitar, Mind and Habits, each with 7/30/90-day ranges.
+
+![Daybook insights showing workouts per day, training volume, sets by muscle, a muscle map and exercise history](qa/insights-1440.png)
+
+**Journal** — a month calendar, a year-long logging heatmap, and every entry for the day.
+
+![Daybook journal with a logging heatmap, month calendar and the day's entries](qa/journal-1440.png)
+
+**Responsive, light and dark**
+
+<table>
+<tr>
+<td width="33%"><img src="qa/chat-390.png" alt="Chat at phone width"></td>
+<td width="33%"><img src="qa/dark-chat-390.png" alt="Chat in dark mode"></td>
+<td width="33%"><img src="qa/dark-insights-nutrition-390.png" alt="Nutrition insights in dark mode"></td>
+</tr>
+</table>
+
+> Screenshots are generated from seeded test fixtures, not real records — `npm run test:browser` writes them to `qa/`.
+
 ## Run locally
 
 ```sh
