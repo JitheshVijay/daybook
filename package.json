@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build && node scripts/prepare-sites-build.mjs",
     "preview": "vite preview",
-    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test:sites": "npm run build && node --test tests/sites-worker.test.mjs",
     "test": "node --test tests/domain.test.mjs tests/day-import.test.mjs tests/insights.test.mjs tests/chat-tools.test.mjs tests/practice.test.mjs tests/logging.test.mjs tests/habits.test.mjs tests/reading.test.mjs tests/database.test.mjs tests/assistant.test.mjs",
     "test:browser": "playwright test"
   },
